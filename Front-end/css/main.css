@@ -1,0 +1,489 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background-image: url(../img/cows-background1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: grey;
+}
+
+h1{
+	font-weight: bold;
+	font-size: 45px;
+}
+
+.center{
+	text-align: center;
+}
+
+.orage{
+	color: orange;
+}
+
+.navigation .grey{
+	color: grey;
+}
+
+.header-inner{
+	display: grid;
+	grid-template-columns: 6fr 5fr;
+	background-color: black;
+	color: white;
+	padding-top: 20px;
+}
+
+.navigation ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.navigation li{
+	margin-top: 10px;
+	list-style: none;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.navigation a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.navigation a:hover{
+	color: grey;
+	padding-bottom: 5px;
+	border-bottom: 1px solid white;
+}
+
+.site-logo{
+	padding-left: 120px;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+
+.content{
+	background-color: rgba(0, 0, 0, 0.62);
+		
+	padding-left: 80px;
+	padding-right: 80px;
+	margin-left: 180px;
+	margin-right: 180px;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	color: white;
+}
+
+.left-panel{
+	display: grid;
+	grid-template-columns: 2fr 5fr 3fr;
+	grid-gap: 30px;
+}
+
+.logo{
+	border-right: 2px solid white;
+}
+
+.logo img{
+	border-radius: 10px;
+}
+
+.user-info ul{
+	list-style: none;
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+.user-info li{
+	padding-top: 10px;
+}
+
+.add-cow input{
+	margin-bottom: 20px;
+	font-size: 20px;
+	border-radius: 20px;
+	text-align: center;
+	padding-left: 50px;
+}
+
+.add-cow-btn{
+	font-size: 20px;
+	border: none;
+	margin-top: 30px;
+	margin-left: 75px;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	background: #2f415f;
+	color: white;
+}
+
+.add-cows{
+	margin-left: 80px;
+	margin-top: 20px;
+	margin-bottom: 400px;
+}
+
+.add-cows h2{
+	margin-left: 5px;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.add-cows label{
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.milk{
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+	padding-top: 80px;
+	padding-bottom: 150px;
+	padding-left: 30px;
+}
+
+
+.milk h2{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.milk select{
+	font-size: 25px;
+	border-radius: 5px;
+	background: #2f415f;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.milk li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	list-style: none;
+	border-bottom: 1px solid grey;
+}
+
+.milk button{
+	font-size: 25px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 30px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	background: #2f415f;
+	color: white;
+}
+
+footer{
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: grey;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: grid;
+	grid-template-columns: 5fr 5fr;
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+
+.localization{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.localization a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold; 
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.reccomend{
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	padding-bottom: 10px;
+	font-size: 25px;
+}
+
+.info{
+	padding-top: 100px;
+	text-align: center;
+}
+
+.value{
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	border: 3px solid #0089c9;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 10px;
+}
+
+.logout{
+	border-radius: 5px;
+	border: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	margin-left: 60px;
+	font-weight: bold;
+	background: #2f415f;
+	color: white;	
+}
+
+#textRec{
+	border-left: 3px solid #0089c9;
+	padding-left: 10px;
+}
+
+table{
+	margin-top: 10px;
+	display: block;
+	height: 690px;
+	width: 800px;
+	overflow: hidden;
+	overflow-y: auto;
+	font-size: 15px;
+	border: 1px solid black;
+	border-spacing: 0px 0px;
+	background-color: #2f415f!important;
+	/*margin-left: 150px;*/
+	border-radius: 5px;
+	margin-left: 30px;
+}
+
+table td{
+	text-align: center;
+	width: 300px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-bottom: 2px solid #9c9c9c;
+	border-right: 1px solid transparenc;
+}
+
+.table td, .table th {
+
+    border-top: none!important;
+}
+
+.table thead th {
+    border-bottom: none!important;
+}
+
+table tr{
+	background-color: rgba(0,0,0,0.1);
+}
+
+thead tr{
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+thead tr:hover{
+	background-color: black!important;
+}
+
+table tr:hover{ 
+	cursor: pointer;
+	background-color: #0089c9;
+}
+
+.edit-user{
+	display: flex;
+	justify-content: center;
+}
+
+.form-table{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.form-table input{
+	margin-bottom: 10px;
+}
+
+.form-table button{
+	font-size: 15px;
+}
+
+.role{
+	background-color: green;
+	border: 1px solid green;
+	color: white;
+}
+
+.select{
+	font-size: 25px;
+	background: #2f415f;
+	color: white;
+	border-radius: 7px;
+	border: none;
+	padding-bottom: 5px;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 10px;
+}
+
+
+
+.selector{
+	font-size: 25px;
+	border: none;
+}
+
+.products{
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr;
+	grid-row-gap: 20px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 120px;
+	margin-top: 20px;
+}
+
+.product img{
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.product h3{
+	font-size: 20px;
+}
+
+.product:hover{
+	transform: scale(0.8);
+	transition: 0.5s;
+}
+
+.offset-20{
+	padding-right: 47px;
+}
+
+.offset-50{
+	padding-left: 50px;
+}
+
+.offset-50b{
+	padding-top: 20px;
+}
+
+
+.prodsducts h2{
+	font-size: 25px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.prodsducts{
+	font-size: 20px;
+}
+
+.infoCorm{
+	border-radius: 10px;
+	border: 2px solid #0089c9;
+	margin-top: 80px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.infoCorm h3{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.infoCorm h4{
+	padding-bottom: 5px;
+	border-bottom: 1px solid grey;
+	font-size: 20px;
+}
+
+.blue{
+	color:#0089c9;
+}
+
+footer{
+	display: grid;
+	grid-template-columns: 5fr 5fr;
+}
+
+.loc{
+	color: white;
+	padding-left: 1590px;
+}
+
+.tabb{
+	display: flex;
+	flex-direction: row;
+}
+
+#hide{
+	padding-left: 30px;
+	font-size: 18px;
+	margin-top: 20px;
+	color: red;
+	visibility: hidden;
+}
+
+.visib{
+	visibility: visible!important;
+}

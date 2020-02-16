@@ -1,0 +1,75 @@
+body{
+	background-image: url(../img/cows-background1.jpg);
+}
+
+h1{
+	text-align: center;
+}
+
+.login-block{
+    display: flex;
+	justify-content: center;
+	padding-top: 150px;
+
+}
+
+.page{
+
+}
+
+.form-login{
+	display: flex;
+	flex-direction: column;
+	padding-left: 90px;
+	padding-right: 90px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	border-radius: 15px;
+	border: 1px solid grey;
+	background-image: url(../img/login.jpg);
+	background-size: cover; 
+	background-position: center;
+}
+
+.form-login h1{
+	padding-bottom: 15px;
+}
+
+.form-login label + input{
+	margin-bottom: 20px;
+}
+
+.form-login input{
+	border-radius: 5px;
+}
+
+.email, .password{
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 1px solid black;
+	color: white;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.email:focus, .password:focus{
+	transition: 0.3s;
+	border: 1px solid green;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.submit{
+	border: none;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	border-radius: 5px;
+	margin-bottom: 40px;
+}
+
+
+
+.reg_a{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	color: black;
+}

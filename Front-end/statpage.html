@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MilkPlus: Облік надоїв</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page">
+        <header class="head">
+            <div class="header-inner">
+             <div class="site-logo"><h2>Milk<span class="blue">Plus</span></h2></div>
+             <div class="site-admin">
+                <nav class="navigation">
+                 <ul>
+                    <li><a id="mainH" href="index.html">МОЛОКО</a></li>
+                    <li><a id="cormH" class="grey" href="statpage.html">КОРОВИ</a></li>
+                    <li><a id="cowsH" href="catalog.html">КОРМ</a></li>
+                </ul> 
+            </nav>  
+
+        </div>
+    </div>
+</header>
+<main class="content">
+    <h1 class="center" id="titleN">Облік надоїв</h1>
+    <div class="left-panel">
+        <div class="logo offset-20">
+            <img src="img/ferma.png" alt="">
+
+            <div class="user-info">
+                <ul>
+                    <li><span id="userN">serhii.hnid</span></li>
+                    <li><span id="userCow">Кількість коров:</span> 3</li>
+                    <li><span id="userMilk">Молока загалом:</span><span id="allMilks"> 80 </span>л</li>
+                </ul>
+                <button class="logout" onclick="location = 'login.html'" id="clicker">Вихід <i class="fas fa-sign-out-alt"></i></button>
+                <br>
+            </div>
+
+
+        </div>
+        <div class="table">
+            <div class="tabb">
+            <select class="select" id="selector">
+                  <option id="other" value="other">Все</option>
+              </select>
+              <h2 id="hide">В даної корви немає надоїв</h2>
+            </div>
+          <table class="table" id="table">
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">T &deg;</th>
+                    <th scope="col">Kg</th>
+                    <th scope="col">Litrs</th>
+                    <th scope="col">P.mass</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="selectr">
+      <div class="add-cows">
+        <h2 id="addCCow" >Додати корову:</h2>
+        <div class="add-cow" >
+            <label id="nam">І'мя:</label>
+            <br>
+            <input type="text" id="names">
+            <br>
+            <label id="ag">Вік:</label>
+            <br>
+            <input type="text" id="age">
+            <br>
+            <label id="po">Позиція:</label>
+            <br>
+            <input type="number" id="position">
+            <br>
+            <button class="add-cow-btn" id="addcows">Додати</button>
+        </div>
+    </div>
+</div>
+</div>
+</main>
+<footer>
+<span>"MilkPlus" autor: Gnid</span>
+        <a class="loc" href="?lang=ua">UA</a>
+        <a  href="?lang=en">EN</a>
+</footer>
+</div>
+
+<!-- <script src="js/script.js"></script> -->
+<script src="js/back.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html> 

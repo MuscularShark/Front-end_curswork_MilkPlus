@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MilkPlus: Каталог корма</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page">
+        <header class="head">
+            <div class="header-inner">
+             <div class="site-logo"><h2>Milk<span class="blue">Plus</span></h2></div>
+             <div class="site-admin">
+                <nav class="navigation">
+                 <ul>
+                    <li><a id="mainH" href="index.html">МОЛОКО</a></li>
+                    <li><a id="cormH" href="statpage.html">КОРОВИ</a></li>
+                    <li><a id="cowsH" class="grey" href="">КОРМ</a></li>
+                </ul> 
+            </nav>  
+
+        </div>
+    </div>
+</header>
+<main class="content">
+    <h1 class="center" id="titleС">Каталог кормів</h1>
+    <div class="left-panel">
+        <div class="logo">
+            <img src="img/ferma.png" alt="">
+
+            <div class="user-info">
+                <ul>
+                    <li><span id="userN">serhii.hnid</span></li>
+                    <li><span id="userCow">Кількість коров:</span> 3</li>
+                    <li><span id="userMilk">Молока загалом:</span><span id="allMilks"> 50 </span>л</li>
+                </ul>
+                <button class="logout" onclick="location = 'login.html'">Вихід <i class="fas fa-sign-out-alt"></i></button>
+                <br>
+            </div>
+        </div>
+<div class="products offset-50b">
+    <div id="1" class="product">
+        <img src="img/corm1.jpg" alt="">
+        <h3 id="value1" >Картопля</h3>
+    </div>
+    <div id="2" class="product">
+        <img src="img/corm2.jpg" alt="">
+        <h3 id="value2" >Сіно</h3>
+    </div>
+    <div id="3" class="product">
+        <img src="img/corm5.jpg" alt="">
+        <h3 id="value3" >Овес</h3>
+    </div>
+    <div id="4" class="product">
+        <img src="img/corm3.jpg" alt="">
+        <h3 id="value4" >Пшениця</h3>
+    </div>
+    <div id="5" class="product">
+        <img src="img/corm4.jpg" alt="">
+        <h3 id="value5" >Макуха</h3>
+    </div>
+    <div id="6" class="product">
+        <img src="img/corm6.jpg" alt="">
+        <h3 id="value6" >Буряк</h3>
+    </div>
+    <div id="7" class="product">
+        <img src="img/corm8.jpg" alt="">
+        <h3 id="value7" >Кукуруза</h3>
+    </div>
+    <div id="8" class="product">
+        <img src="img/corm7.jpg" alt="">
+        <h3 id="value8" >Ячмінь</h3>
+    </div>
+    <div id="12" class="product">
+        <img src="img/corm9.jpg" alt="">
+        <h3 id="value9" >Жом</h3>
+    </div>
+    <div id="9" class="product">
+        <img src="img/corm10.jpg" alt="">
+        <h3 id="value10" >Патока</h3>
+    </div>
+    <div id="10" class="product">
+        <img src="img/corm11.jpg" alt="">
+        <h3 id="value11" >Морква</h3>
+    </div>
+     <div id="11" class="product">
+        <img src="img/corm12.jpg" alt="">
+        <h3 id="value12" >Трава</h3>
+    </div>
+</div>
+<div class="prodsducts">
+    <h2 id="titleCorm" >Підберіть корм доступний вам:</h2>
+   <p id="aboutTitle" >Тут ви зможете підібрати таку кількість кормів, щоб кількість кормових одиниць і білка збіглося точка в точку з нормою.
+   </p>
+     
+   <div class="infoCorm">
+       <h3 id="nameCorm" class="blue">Овес</h3>
+       <br>
+       <h4>Тип: <span id="type">Lorem</span></h4>
+       <br>
+       <h4>Кормова цінність на 1 кг: <span id="corm">Lorem</span></h4>
+       <br>
+       <h4>Час кращий для корму: <span id="day">Lorem</span></h4>
+   </div>
+</div>
+
+</div>
+</main>
+<footer>
+<span>"MilkPlus" autor: Gnid</span>
+   
+
+        <a class="loc" href="?lang=ua">UA</a>
+        <a  href="?lang=en">EN</a>
+ 
+   
+</footer>
+</div>
+
+<!-- <script src="js/script.js"></script> -->
+<script src="js/app.js"></script>
+<script src="js/corm.js"></script>
+</body>
+</html>
